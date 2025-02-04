@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rashna KC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader">
+        <div class="spinner"></div>
+      </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <nav class="navbar">
+      <div class="container">
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <li><a href="Rashna_KC_CV.pdf" download class="btn">Download CV</a></li>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home" class="header">
+      <div class="container">
+        <h1 class="fade-in">Welcome to My Data Playground</h1>
+        <p class="subtitle fade-in">
+          Transforming Data into Insights, Stories, and Actionable Decisions
+        </p>
+        <div class="social-icons fade-in">
+          <a href="https://www.linkedin.com/in/rashna-k-c-3a1687249/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Kcrashna" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://x.com/KcRashna" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+        </svg>
+      </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <p>
+            I am not just a data analyst—I am a storyteller who uses data as my
+            canvas. With expertise in data visualization, statistical analysis,
+            and machine learning, I transform raw data into actionable insights.
+            My goal is to play with data, uncover hidden patterns, and craft
+            narratives that drive decisions.
+          </p>
+          <img src="Images/Rashna image.jpeg" alt="About Me" class="about-image" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>My Skills</h2>
+        <div class="chart-cards">
+          <div class="chart-card">
+            <canvas id="barChart" width="400" height="200"></canvas>
+            <p class="chart-description">
+              Skill levels in various tools and technologies.
+            </p>
+          </div>
+          <div class="chart-card">
+            <canvas id="radarChart" width="400" height="200"></canvas>
+            <p class="chart-description">
+              Distribution of skills across different domains.
+            </p>
+          </div>
+          <div class="chart-card">
+            <canvas id="pieChart" width="200" height="200"></canvas>
+            <p class="chart-description">
+              Breakdown of experience in various areas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="Images/Lumber Spine.jpeg" alt="Project 1" class="project-image" />
+            <h3>Project 1</h3>
+            <p>Lumber Spine MRI Super-Resolution Using SRGANs.</p>
+          </div>
+          <div class="project-card">
+            <img src="Images/AI interview.jpg" alt="Project 2" class="project-image" />
+            <h3>Project 2</h3>
+            <p>AI-Enhanced Interview and Assessment System.</p>
+          </div>
+          <div class="project-card">
+            <img src="Images/Customer Chatbot.jpg" alt="Project 3" class="project-image" />
+            <h3>Project 3</h3>
+            <p>Customer Support Chatbot using Rasa.</p>
+          </div>
+          <div class="project-card">
+            <img src="Images/Power Bi Dashboards.png" alt="Project 3" class="project-image" />
+            <h3>Project 4</h3>
+            <p>Building dashboards with Power BI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <!-- Experience Section -->
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>My Experience</h2>
+      <p>
+        I have extensive experience as a Data Analyst, leveraging data to uncover insights and drive decision-making. Below are the key fields of expertise:
+      </p>
+      <div class="experience-cards">
+        <!-- Card: Data Visualization -->
+        <div class="card">
+          <strong>Data Visualization</strong>
+          <p>
+            Proficient in tools like Power BI, Tableau, and Python libraries such as Matplotlib and Seaborn to create compelling dashboards and visual reports.
+          </p>
+        </div>
+
+        <!-- Card: Statistical Analysis -->
+        <div class="card">
+          <strong>Statistical Analysis</strong>
+          <p>
+            Skilled in hypothesis testing, regression models, and statistical significance analysis to interpret and validate data.
+          </p>
+        </div>
+
+        <!-- Card: Machine Learning -->
+        <div class="card">
+          <strong>Machine Learning</strong>
+          <p>
+            Experienced in developing predictive models using Python (Scikit-learn, TensorFlow) to analyze trends and make data-driven recommendations.
+          </p>
+        </div>
+
+        <!-- Card: ETL Pipelines -->
+        <div class="card">
+          <strong>ETL Pipelines</strong>
+          <p>
+            Hands-on experience with extracting, transforming, and loading (ETL) data using SQL, Python, and Apache Airflow.
+          </p>
+        </div>
+
+        <!-- Card: Business Intelligence -->
+        <div class="card">
+          <strong>Business Intelligence</strong>
+          <p>
+            Expertise in analyzing business data to identify trends and opportunities, resulting in improved operational strategies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Reach Out to Me</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Rashna KC. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // GSAP animation for data flow
+      gsap.to("#dataFlow path", {
+        strokeDasharray: "2000",
+        strokeDashoffset: "2000",
+        duration: 5,
+        repeat: -1,
+        ease: "linear",
+        yoyo: true,
+      });
+
+      // GSAP animation for introduction text
+      gsap.from(".intro-text", {
+        opacity: 0,
+        y: -50,
+        duration: 1.5,
+        ease: "bounce.out",
+      });
+    </script>
+  </body>
+</html>
